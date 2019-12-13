@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14749" started-at="2019-12-06T09:13:49Z" finished-at="2019-12-06T09:14:03Z">
+  <suite name="Default suite" duration-ms="10024" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14749" started-at="2019-12-06T09:13:49Z" finished-at="2019-12-06T09:14:03Z">
-      <class name="basic.Flwait">
-        <test-method status="PASS" signature="testA()[pri:0, instance:basic.Flwait@23f5b5dc]" name="testA" duration-ms="14733" started-at="2019-12-06T09:13:49Z" finished-at="2019-12-06T09:14:03Z">
+    <test name="Default test" duration-ms="10024" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
+      <class name="svg.Demo1">
+        <test-method status="PASS" signature="testSvg1()[pri:0, instance:svg.Demo1@6121c9d6]" name="testSvg1" duration-ms="10005" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testA -->
-      </class> <!-- basic.Flwait -->
+        </test-method> <!-- testSvg1 -->
+      </class> <!-- svg.Demo1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
