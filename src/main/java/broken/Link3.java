@@ -1,6 +1,7 @@
 package broken;
 
 
+import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +16,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Link3
 {
 	@Test
-	public void testLink()
+	public void testLink() throws IOException
 	{
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
@@ -28,7 +29,7 @@ public class Link3
 		{
 			WebElement link = allLinks.get(i);
 			String href = link.getAttribute("href");
-			LinkUtlity.responseForLink(href);
+			LinkUtlity.verifyLink(href);
 		}
 	}
 

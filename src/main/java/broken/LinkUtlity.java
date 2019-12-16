@@ -6,6 +6,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 public class LinkUtlity {
@@ -28,51 +29,27 @@ public class LinkUtlity {
 		}
 	}
 
-	public static void getReposneForImg(String src)  
-	{
-		int Ecode = 200;
-		try 
+
+		
+		public static void getReposneForImg(String src)
 		{
-			URL url = new URL(src);
-			HttpURLConnection con = (HttpURLConnection) url.openConnection();
-			int code = con.getResponseCode();
-			String msg = con.getResponseMessage();
-			SoftAssert sa = new SoftAssert();
-			sa.assertEquals(code, Ecode);
-			System.out.println(src +" image is not broken and response code is "+code);
-		}
-		catch (IOException e)
-		{
+			int Ecode = 200;
+			try 
+			{
+				URL url = new URL(src);
+				HttpURLConnection con = (HttpURLConnection) url.openConnection();
+				int code = con.getResponseCode();
+				String msg = con.getResponseMessage();
+				SoftAssert sa = new SoftAssert();
+				sa.assertEquals(code, Ecode);
+				System.out.println(src +" image is not broken and response code is "+code);
+			}
+			catch (IOException e)
+			{
+				
+				e.printStackTrace();
+			}
 			
-			e.printStackTrace();
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
 
 }

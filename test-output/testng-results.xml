@@ -1,17 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Url is https://selenium.dev/Response Code is :200Response Msg is :OK]]>
+    </line>
+    <line>
+      <![CDATA[Url is https://www.google.com/Response Code is :200Response Msg is :OK]]>
+    </line>
+    <line>
+      <![CDATA[Url is http://www.qspiders.com/Response Code is :403Response Msg is :Forbidden]]>
+    </line>
+    <line>
+      <![CDATA[Url is http://www.qspider.com/Response Code is :301Response Msg is :Moved Permanently]]>
+    </line>
+    <line>
+      <![CDATA[lINK IS BROKEN,]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10024" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
+  <suite name="Default suite" duration-ms="26549" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10024" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
-      <class name="svg.Demo1">
-        <test-method status="PASS" signature="testSvg1()[pri:0, instance:svg.Demo1@6121c9d6]" name="testSvg1" duration-ms="10005" started-at="2019-12-13T14:11:28Z" finished-at="2019-12-13T14:11:38Z">
+    <test name="Default test" duration-ms="26549" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
+      <class name="broken.Link3">
+        <test-method status="PASS" signature="testLink()[pri:0, instance:broken.Link3@6121c9d6]" name="testLink" duration-ms="26515" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
           <reporter-output>
+            <line>
+              <![CDATA[Url is https://selenium.dev/Response Code is :200Response Msg is :OK]]>
+            </line>
+            <line>
+              <![CDATA[Url is https://www.google.com/Response Code is :200Response Msg is :OK]]>
+            </line>
+            <line>
+              <![CDATA[Url is http://www.qspiders.com/Response Code is :403Response Msg is :Forbidden]]>
+            </line>
+            <line>
+              <![CDATA[Url is http://www.qspider.com/Response Code is :301Response Msg is :Moved Permanently]]>
+            </line>
+            <line>
+              <![CDATA[lINK IS BROKEN,]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- testSvg1 -->
-      </class> <!-- svg.Demo1 -->
+        </test-method> <!-- testLink -->
+      </class> <!-- broken.Link3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
