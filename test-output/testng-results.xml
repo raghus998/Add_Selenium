@@ -1,47 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[Url is https://selenium.dev/Response Code is :200Response Msg is :OK]]>
+      <![CDATA[Suite is started :DemoListenSuite]]>
     </line>
     <line>
-      <![CDATA[Url is https://www.google.com/Response Code is :200Response Msg is :OK]]>
+      <![CDATA[TestBlock is started :DemoListenTest]]>
     </line>
     <line>
-      <![CDATA[Url is http://www.qspiders.com/Response Code is :403Response Msg is :Forbidden]]>
+      <![CDATA[Test is started :TestA]]>
     </line>
     <line>
-      <![CDATA[Url is http://www.qspider.com/Response Code is :301Response Msg is :Moved Permanently]]>
+      <![CDATA[TestA.... ]]>
     </line>
     <line>
-      <![CDATA[lINK IS BROKEN,]]>
+      <![CDATA[Test is Passed :TestA]]>
+    </line>
+    <line>
+      <![CDATA[Test is started :TestB]]>
+    </line>
+    <line>
+      <![CDATA[TestB.... ]]>
+    </line>
+    <line>
+      <![CDATA[Test is Failed :TestB null]]>
+    </line>
+    <line>
+      <![CDATA[Test is started :testC]]>
+    </line>
+    <line>
+      <![CDATA[TestC.....]]>
+    </line>
+    <line>
+      <![CDATA[Test is Passed :testC]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26549" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
+  <suite name="DemoListenSuite" duration-ms="57" started-at="2019-12-19T13:24:56Z" finished-at="2019-12-19T13:24:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26549" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
-      <class name="broken.Link3">
-        <test-method status="PASS" signature="testLink()[pri:0, instance:broken.Link3@6121c9d6]" name="testLink" duration-ms="26515" started-at="2019-12-16T11:59:31Z" finished-at="2019-12-16T11:59:58Z">
+    <test name="DemoListenTest" duration-ms="57" started-at="2019-12-19T13:24:56Z" finished-at="2019-12-19T13:24:56Z">
+      <class name="listen.DemoA">
+        <test-method status="PASS" signature="TestA()[pri:0, instance:listen.DemoA@63440df3]" name="TestA" duration-ms="7" started-at="2019-12-19T13:24:56Z" finished-at="2019-12-19T13:24:56Z">
           <reporter-output>
             <line>
-              <![CDATA[Url is https://selenium.dev/Response Code is :200Response Msg is :OK]]>
+              <![CDATA[Test is started :TestA]]>
             </line>
             <line>
-              <![CDATA[Url is https://www.google.com/Response Code is :200Response Msg is :OK]]>
+              <![CDATA[TestA.... ]]>
             </line>
             <line>
-              <![CDATA[Url is http://www.qspiders.com/Response Code is :403Response Msg is :Forbidden]]>
-            </line>
-            <line>
-              <![CDATA[Url is http://www.qspider.com/Response Code is :301Response Msg is :Moved Permanently]]>
-            </line>
-            <line>
-              <![CDATA[lINK IS BROKEN,]]>
+              <![CDATA[Test is Passed :TestA]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testLink -->
-      </class> <!-- broken.Link3 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TestA -->
+        <test-method status="FAIL" signature="TestB()[pri:0, instance:listen.DemoA@63440df3]" name="TestB" duration-ms="2" started-at="2019-12-19T13:24:56Z" finished-at="2019-12-19T13:24:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.fail(Assert.java:103)
+at listen.DemoA.TestB(DemoA.java:21)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Test is started :TestB]]>
+            </line>
+            <line>
+              <![CDATA[TestB.... ]]>
+            </line>
+            <line>
+              <![CDATA[Test is Failed :TestB null]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TestB -->
+      </class> <!-- listen.DemoA -->
+      <class name="listen.DemoC">
+        <test-method status="PASS" signature="testC()[pri:0, instance:listen.DemoC@3aeaafa6]" name="testC" duration-ms="0" started-at="2019-12-19T13:24:56Z" finished-at="2019-12-19T13:24:56Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test is started :testC]]>
+            </line>
+            <line>
+              <![CDATA[TestC.....]]>
+            </line>
+            <line>
+              <![CDATA[Test is Passed :testC]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testC -->
+      </class> <!-- listen.DemoC -->
+    </test> <!-- DemoListenTest -->
+  </suite> <!-- DemoListenSuite -->
 </testng-results>

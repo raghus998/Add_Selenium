@@ -29,7 +29,7 @@ public class Link3
 		{
 			WebElement link = allLinks.get(i);
 			String href = link.getAttribute("href");
-			LinkUtlity.verifyLink(href);
+			LinkUtlity.responseForLink(href);
 		}
 	}
 
